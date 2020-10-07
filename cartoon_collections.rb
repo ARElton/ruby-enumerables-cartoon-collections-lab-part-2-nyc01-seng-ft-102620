@@ -17,7 +17,9 @@ def long_planeteer_calls(planeteer_calls)
 end
 
 def find_valid_calls(planeteer_calls)
-  vaild_calls = []
- planeteer_calls.all? do |string|
-   
+  valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
+ valid_calls.all? do |string|
+   planeteer_calls.include?(string)
+ end
+  
 end
